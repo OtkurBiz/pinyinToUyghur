@@ -1,0 +1,33 @@
+{
+  "name": "pinyin-to-uyghur",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "nodemon lib/index.js --exec babel-node --presets es2015,stage-2",
+    "build": "babel lib -d dist --presets es2015,stage-2",
+    "serve": "node dist/index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git@git.otkur.biz:bulut-bazar/product-images-from-web.git"
+  },
+  "author": "Alim Boyaq",
+  "license": "ISC",
+  "devDependencies": {
+    "babel-cli": "^6.14.0",
+    "babel-preset-es2015": "^6.14.0",
+    "babel-preset-stage-2": "^6.13.0",
+    "nodemon": "^1.10.2"
+  },
+  "dependencies": {
+    "chalk": "^1.1.3",
+    "crawler": "^0.4.3",
+    "excel": "^0.1.6",
+    "exceljs": "^0.2.24",
+    "express": "^4.14.0",
+    "pinyin": "^2.8.0",
+    "urllib-sync": "^1.1.3"
+  }
+}
