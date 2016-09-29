@@ -1,9 +1,6 @@
 import pinyin from 'pinyin';
-import {yinjieToUyghurTable} from './pinyinToUyghurTable';
-const chalk = require('chalk');
 import parseXlsx from 'excel';
-import Excel from 'exceljs';
-import Convert from './convert';
+import Convert from '../index';
 import fs from 'fs';
 
 export default class Excute {
@@ -20,10 +17,6 @@ export default class Excute {
                 return convert.convertNow(value[0]);
             });
             
-            var workbook = new Excel.Workbook();
-            var sheet = workbook.addWorksheet('My Sheet');
-
-            let fullFile = __dirname + '../data/new-data.xlsx';
             console.log(newData);
             
 
